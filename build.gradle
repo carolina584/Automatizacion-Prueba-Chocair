@@ -34,7 +34,7 @@ configurations.all {
     }
 }
 dependencies {
-    compile libs.logback
+    
 
     testCompile libs.test.cucumber.java,
             libs.test.cucumber.junit,
@@ -45,12 +45,10 @@ dependencies {
             libs.test.serenity.cucumber,
             libs.test.junit,
             libs.test.assertj
+            
+    
 }
 
-test {
-    testLogging.showStandardStreams = true
-    systemProperties System.getProperties()
-}
 
 gradle.startParameter.continueOnFailure = true
 
